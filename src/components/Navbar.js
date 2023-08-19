@@ -29,7 +29,7 @@ const Navbar = (props) => {
   return (
     <nav className={`fixed w-full z-50 ${isScrolled ? `${props.bg} bg-opacity-70 backdrop-filter backdrop-blur-lg duration-1000` : `bg-transparent ${props.border} `}`}>
       <div className="container mx-auto flex items-center justify-between py-4 px-8">
-        <div className={`font-bold text-zinc-700 text-xl whitespace-nowrap `}>Yoga Retreat</div>
+        <div className={`font-bold text-white text-xl whitespace-nowrap `}>Yoga Retreat</div>
         <div className="flex items-center">
           <button className="text-zinc-700 font-medium md:hidden" onClick={toggleMenu}>
             <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">

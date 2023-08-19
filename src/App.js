@@ -2,7 +2,10 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import PlainSection from './components/PlainSection';
-import LocationSection from './components/LocationSection';
+import LocationSection from './components/LocationSection'
+import Facilities from './components/Facilities';
+import HighlightsSection from './components/HighlightsSection';
+
 import {
   BrowserRouter as Router,
   Routes,
@@ -17,6 +20,8 @@ import AboutWellnessExpert from './components/AboutWellnessExpert';
 import Footer from './components/Footer';
 
 import ScrollToTop from './helpers/ScrollToTop';
+import TestimonialsSection from './components/TestimonialsSection';
+
 
 const App = () => {
   return (
@@ -30,9 +35,12 @@ const App = () => {
             <PlainSection />
             <LocationSection />
             <WellnessExpertSection />
-            <CardSection />
+            <HighlightsSection />
+            <Facilities />
+            
             <TeamMembersSection />
-            <AboutWellnessExpert />
+           
+            <TestimonialsSection />
             <Footer />
           </>
           } />

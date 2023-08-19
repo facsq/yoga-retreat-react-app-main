@@ -1,23 +1,47 @@
 import React from 'react';
-import wellnessImage from '../assets/wellness-image.png';
+import cardImage1 from '../assets/card-image1.png';
+import cardImage2 from '../assets/card-image1.png';
+import facebookIcon from '../assets/facebook.png';
+import twitterIcon from '../assets/twitter.png';
+import instagramIcon from '../assets/instagram.png';
+import linkedinIcon from '../assets/linkedin.png';
 
 const WellnessExpertSection = () => {
   return (
-    <section className="bg-litegreen py-10 rounded-3xl shadow-xl xl:mx-16 lg:mx-16 md:mx-16 mx-4 2xl:mx-24">
-      <div className="container px-4">
-        <h2 className="text-4xl md:text-4xl font-bold text-center mb-4 text-sitegreen">About Our Wellness Expert</h2>
-        <div className="flex flex-col md:flex-row items-center">
-          <div className="md:w-1/2">
-            <img src={wellnessImage} alt="wellness" className="w-full max-w-md mx-auto sm:pt-12" />
+    <section className="py-8 bg-litegreen pb-20">
+      <div className="container mx-auto">
+        <h2 className="text-3xl md:text-4xl text-center font-bold mb-12 text-sitegreen">About Our Wellness Experts</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-24 2xl:mx-72">
+          <div className="relative overflow-hidden rounded-lg shadow-md md:h-80 lg:h-96">
+            <img src={cardImage1} alt="Card 1" className="w-full h-full object-cover rounded-lg" />
+            <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-60 opacity-0 hover:opacity-100 transition-opacity duration-300 rounded-lg">
+              <p className="text-white text-center p-4">Her yoga journey started from 22 years of age, with Ashtanga Yoga from many guru's in Rishikesh later learned Hatha yoga and got certified from Rishikesh Yogpeeth. He has been a footballer and trained aspiring Indian soldiers in Rishikesh.</p>
+            </div>
+            <div className="absolute bottom-0 left-0 right-0 bg-sitegreen rounded-b-lg">
+              <p className="text-center text-white mb-2 mt-2 text-lg">Yogini Ayushi Sharma</p>
+              <div className="flex justify-center space-x-6 pb-4">
+                <a href="#" className="footer-icon-link"><img src={facebookIcon} alt="Facebook" className="w-6 h-6" /></a>
+                <a href="#" className="footer-icon-link"><img src={twitterIcon} alt="Twitter" className="w-6 h-6" /></a>
+                <a href="#" className="footer-icon-link"><img src={instagramIcon} alt="Instagram" className="w-6 h-6" /></a>
+                <a href="#" className="footer-icon-link"><img src={linkedinIcon} alt="LinkedIn" className="w-6 h-6" /></a>
+              </div>
+            </div>
           </div>
-          <div className="md:w-1/2 md:pl-10 2xl:pr-20">
-            <p className="text-base md:text-lg text-center md:text-left sm:pt-12">
-              Dr. Nandlal Kothari is a highly respected naturopath who has been working in the field of wellness and preventive medicine since 1999. With extensive knowledge in the areas of diet therapy, yogic breath therapy, nature cure treatments, and Panchkarma, he has helped countless people around the world achieve optimal health and well-being.
-              <br /><br />
-              Dr. Kothari is a graduate in naturopathy (BYN), has a postgraduate degree in life sciences, and holds a diploma in nutrition and Panchkarma. He is a renowned expert in his field and has been traveling around the globe spreading health awareness and self-cure through lectures, workshops, and one-on-one counseling.
-              <br /><br />
-              Dr. Kothari's approach to natural healing is rooted in the belief that the body has the inherent ability to heal itself. He emphasizes the importance of a balanced diet, healthy lifestyle habits, and natural therapies to help individuals achieve optimal health and well-being. His expertise in diet therapy, yogic breath therapy, and nature cure treatments and Panchkarma has helped many people overcome various health issues and achieve a state of wellness.
-            </p>
+
+          <div className="relative overflow-hidden rounded-lg shadow-md md:h-80 lg:h-96">
+            <img src={cardImage2} alt="Card 2" className="w-full h-full object-cover rounded-lg" />
+            <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-60 opacity-0 hover:opacity-100 transition-opacity duration-300 rounded-lg">
+              <p className="text-white text-center p-4">His yoga journey began 10 years ago with Vinyasa yoga and she has since then explored various styles like Yin, Hatha, and Ashtanga yoga. She is a certified yoga instructor from Yoga Alliance.</p>
+            </div>
+            <div className="absolute bottom-0 left-0 right-0 bg-sitegreen rounded-b-lg">
+              <p className="text-center text-lg text-white mb-2 mt-2">Yogi Gaurav Negi</p>
+              <div className="flex justify-center space-x-6 pb-4">
+                <a href="#" className="footer-icon-link"><img src={facebookIcon} alt="Facebook" className="w-6 h-6" /></a>
+                <a href="#" className="footer-icon-link"><img src={twitterIcon} alt="Twitter" className="w-6 h-6" /></a>
+                <a href="#" className="footer-icon-link"><img src={instagramIcon} alt="Instagram" className="w-6 h-6" /></a>
+                <a href="#" className="footer-icon-link"><img src={linkedinIcon} alt="LinkedIn" className="w-6 h-6" /></a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
